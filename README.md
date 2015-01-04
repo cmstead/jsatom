@@ -9,8 +9,8 @@ to the atom only if the atom data hasn't changed during the execution of the mut
 
 To Dos
 
-- [ ] Create core atom module
-- [ ] Build swap function
-- [ ] Implement watchers
-- [ ] Return unwatch function
-- [ ] Handle assigned validator
+- [ ] Create core atom module (atom.build)
+- [ ] Build swap function (function swap)
+- [ ] Implement watchers (function setWatcher)
+- [ ] Return unwatch function (return from setWatcher)
+- [ ] Handle assigned validator (function setValidator)
