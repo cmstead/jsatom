@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9ac12d9e-c455-4011-b9be-738bfffdbca5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/atom.js" afterPath="$PROJECT_DIR$/src/atom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jsatom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,15 +27,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="42" selection-start="400" selection-end="400" vertical-scroll-proportion="0.2972973" vertical-offset="0" max-vertical-offset="555">
+            <state line="30" column="21" selection-start="1072" selection-end="1072" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atom.spec.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/atom.spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="47" selection-start="159" selection-end="159" vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="582">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atom.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/atom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="14" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -53,8 +73,10 @@
         <option value="$PROJECT_DIR$/grunt/clean.json" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/atom.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/atom.spec.js" />
+        <option value="$PROJECT_DIR$/src/atom.js" />
+        <option value="$PROJECT_DIR$/spec/atom.spec.js" />
       </list>
     </option>
   </component>
@@ -132,6 +154,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsatom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsatom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="grunt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -146,6 +182,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spec" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -242,21 +283,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/atom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="84" selection-end="84" vertical-scroll-proportion="0.12886597" vertical-offset="0" max-vertical-offset="582">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="42" selection-start="400" selection-end="400" vertical-scroll-proportion="0.2972973" vertical-offset="0" max-vertical-offset="555">
+        <state line="30" column="21" selection-start="1072" selection-end="1072" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="14" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/atom.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="47" selection-start="159" selection-end="159" vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="582">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
