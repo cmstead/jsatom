@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ac12d9e-c455-4011-b9be-738bfffdbca5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/atom.js" afterPath="$PROJECT_DIR$/src/atom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9ac12d9e-c455-4011-b9be-738bfffdbca5" name="Default" comment="" />
     <ignored path="jsatom.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="21" selection-start="1072" selection-end="1072" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="540">
+            <state line="30" column="21" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.8108108" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -39,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="atom.spec.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="atom.spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/atom.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="47" selection-start="159" selection-end="159" vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="582">
+            <state line="6" column="47" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -283,16 +279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="21" selection-start="1072" selection-end="1072" vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/atom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="14" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
@@ -302,9 +288,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/atom.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="47" selection-start="159" selection-end="159" vertical-scroll-proportion="0.15463917" vertical-offset="0" max-vertical-offset="582">
+        <state line="6" column="47" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="21" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.8108108" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
