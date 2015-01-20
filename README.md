@@ -18,6 +18,8 @@ To Dos
 - [ ] Handle assigned validator (function setValidator)
 - [ ] Retrieve raw value (resolve outstanding swaps, return value, function deref)
 - [ ] Compare old value and set new value (ensures old value value is still the current value and sets value)
+- [ ] Fire watcher events on atom
+- [ ] Remove watcher
 
 ##JFP module extension
 
@@ -28,4 +30,5 @@ All of the collowing functions can/will have side effects
 - [ ] deref (atom, fn)
 - [ ] setValidator (atom, fn)
 - [ ] setWatcher (atom, fn)
+- [ ] removeWatcher(atom, watherId)
 - [ ] swap (atom, fn)
