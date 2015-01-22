@@ -12,5 +12,8 @@
     "karma-jasmine": "^0.1.5",
     "karma-phantomjs-launcher": "^0.1.4",
     "phantomjs": "^1.9.10"
+  },
+  "dependencies": {
+    "jfp": "^1.1.3"
   }
 }

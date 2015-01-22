@@ -17,7 +17,6 @@ To Dos
 - [ ] Return unwatch function (return from setWatcher)
 - [ ] Handle assigned validator (function setValidator)
 - [ ] Retrieve raw value (resolve outstanding swaps, return value, function deref)
-- [ ] Compare old value and set new value (ensures old value value is still the current value and sets value)
 
 ##JFP module extension
 

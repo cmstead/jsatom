@@ -9,12 +9,13 @@ module.exports = function(config){
         browsers: ['PhantomJS'],
 
         files: [
-            '../src/**/*.js',
+            '../node_modules/jfp/dist/jfp.js',
+            '../src/atom.js',
             './**/*.spec.js'
         ],
 
         preprocessors: {
-            '../scripts/src/modules/*.js': ['coverage']
+            '../src/atom.js': ['coverage']
         },
 
         coverageReporter: {
