@@ -4,11 +4,6 @@
     <list default="true" id="9ac12d9e-c455-4011-b9be-738bfffdbca5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/atom.js" afterPath="$PROJECT_DIR$/src/atom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/atom.spec.js" afterPath="$PROJECT_DIR$/spec/atom.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/jshint.json" afterPath="$PROJECT_DIR$/grunt/jshint.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/karma.config.js" afterPath="$PROJECT_DIR$/spec/karma.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jsatom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +38,19 @@
       <file leaf-file-name="atom.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/atom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.23195876" vertical-offset="0" max-vertical-offset="810">
+            <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.05154639" vertical-offset="0" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="864" selection-end="864" vertical-scroll-proportion="-12.222222" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -66,10 +73,10 @@
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/atom.spec.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spec/karma.config.js" />
         <option value="$PROJECT_DIR$/grunt/jshint.json" />
         <option value="$PROJECT_DIR$/spec/atom.spec.js" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/atom.js" />
       </list>
     </option>
@@ -305,14 +312,6 @@
         <state line="1" column="17" selection-start="19" selection-end="19" vertical-scroll-proportion="0.02688172" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="699" selection-end="699" vertical-scroll-proportion="0.5135135" vertical-offset="0" max-vertical-offset="555" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/karma.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="16" selection-start="340" selection-end="340" vertical-scroll-proportion="0.41237113" vertical-offset="0" max-vertical-offset="582">
@@ -334,9 +333,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="864" selection-end="864" vertical-scroll-proportion="-12.222222" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/atom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.23195876" vertical-offset="0" max-vertical-offset="810">
+        <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.05154639" vertical-offset="0" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
