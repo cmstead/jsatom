@@ -13,7 +13,8 @@
     }
 
     function atomSwap(valueObj, callback){
-        valueObj.value = callback(valueObj.value);
+	//Keep performing compare and set until success happens
+	while(!atomCompareAndSet(valueObj, valueObj, callback(valueObj.value));
     }
 
     function atom(value){
