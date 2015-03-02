@@ -67,6 +67,25 @@
 
         });
 
+	describe('j.watch', function(){
+
+		var testAtom;
+		
+		beforeEach(function(){
+			testAtom = j.atom('testValue');
+		});
+
+		it('should set a watcher that executes when the atom is updated.', function(){
+			var spy = jasmine.createSpy('watcher');
+			
+			j.watch(testAtom, spy);
+			j.compareAndSet(testAtom, 'testValue', 'aNewValue');
+			
+			expect(spy).toHaveBeenCalledWith(testAtom);
+		});
+
+	});
+
     });
 
 })();
