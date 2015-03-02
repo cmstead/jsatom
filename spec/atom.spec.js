@@ -67,24 +67,43 @@
 
         });
 
-	describe('j.watch', function(){
+		describe('j.watch', function(){
 
-		var testAtom;
+			var testAtom;
 		
-		beforeEach(function(){
-			testAtom = j.atom('testValue');
-		});
+			beforeEach(function(){
+				testAtom = j.atom('testValue');
+			});
 
-		it('should set a watcher that executes when the atom is updated.', function(){
-			var spy = jasmine.createSpy('watcher');
+			it('should set a watcher that executes when the atom is updated.', function(){
+				var spy = jasmine.createSpy('watcher');
 			
-			j.watch(testAtom, spy);
-			j.compareAndSet(testAtom, 'testValue', 'aNewValue');
+				j.watch(testAtom, spy);
+				j.compareAndSet(testAtom, 'testValue', 'A new value');
 			
-			expect(spy).toHaveBeenCalledWith(testAtom);
-		});
+				expect(spy).toHaveBeenCalledWith('A new value');
+			});
 
-	});
+			it('should not call watcher if atom is not updated', function(){
+				var spy = jasmine.createSpy('watcher');
+
+				j.watch(testAtom, spy);
+				j.compareAndSet(testAtom, 'foo', 'A new value');
+
+				expect(spy).not.toHaveBeenCalled();
+			});
+
+			it('should not attempt to call watcher if it is not a function', function(){
+				j.watch(testAtom, 'foo');
+
+				function test(){
+					j.compareAndSet(testAtom, 'testValue', 'A new value');
+				}
+
+				expect(test).not.toThrow();
+			});
+
+		});
 
     });
 

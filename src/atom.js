@@ -1,13 +1,13 @@
 (function(j){
 
-	function executeWatcher(value, watcher){
-		if(!j.isUndefined(watcher)){
+	function atomExecuteWatcher(value, watcher){
+		if(j.isFunction(watcher)){
 			watcher(value);
 		}
 	}
 
 	function atomExecuteWatchers(watchers, value){
-		var executeWatcher = j.partial(executeWatcher, value);
+		var executeWatcher = j.partial(atomExecuteWatcher, value);
 
 		j.each(executeWatcher, watchers);	
 	}
@@ -17,7 +17,9 @@
 
         valueObj.value = (valuesMatch) ? newValue : valueObj.value;
 
-		atomExecuteWatchers(watchers, newValue);
+		if(valuesMatch){
+			atomExecuteWatchers(watchers, newValue);
+		}
 
         return valuesMatch;
     }
@@ -26,9 +28,9 @@
         return valueObj.value;
     }
 
-    function atomSwap(valueObj, callback){
+    function atomSwap(valueObj, watchers, callback){
 		//Keep performing compare and set until success happens
-		while(!atomCompareAndSet(valueObj, valueObj.value, callback(valueObj.value)));
+		while(!atomCompareAndSet(valueObj, watchers, valueObj.value, callback(valueObj.value)));
     }
 
     function atomWatch(watchers, watcher){
@@ -44,7 +46,7 @@
         return {
             compareAndSet: j.partial(atomCompareAndSet, valueObj, watchers),
             deref: j.partial(atomDeref, valueObj),
-            swap: j.partial(atomSwap, valueObj),
+            swap: j.partial(atomSwap, valueObj, watchers),
 			watch: j.partial(atomWatch, watchers) 
         };
     }

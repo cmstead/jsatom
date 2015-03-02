@@ -13,7 +13,7 @@ To Dos
 
 - [x] Create core atom module (atom.build)
 - [x] Build swap function (function swap)
-- [ ] Implement watchers (function setWatcher)
+- [x] Implement watchers (function setWatcher)
 - [ ] Return unwatch function (return from setWatcher)
 - [ ] Handle assigned validator (function setValidator)
 - [x] Retrieve raw value (function deref)
@@ -29,6 +29,6 @@ All of the collowing functions can/will have side effects
 - [x] compareAndSet (atom, oldValue, newValue) (can fail)
 - [x] deref (atom, fn)
 - [ ] setValidator (atom, fn)
-- [ ] setWatcher (atom, fn)
+- [x] setWatcher (atom, fn)
 - [ ] removeWatcher(atom, watcherId)
 - [x] swap (atom, fn)
