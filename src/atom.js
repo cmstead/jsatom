@@ -9,7 +9,7 @@
 	function atomExecuteWatchers(watchers, value){
 		var executeWatcher = j.partial(atomExecuteWatcher, value);
 
-		j.each(executeWatcher, watchers);	
+		j.each(executeWatcher, watchers);
 	}
 
     function atomCompareAndSet(valueObj, watchers, oldValue, newValue){
@@ -33,8 +33,13 @@
 		while(!atomCompareAndSet(valueObj, watchers, valueObj.value, callback(valueObj.value)));
     }
 
+	function unwatch(watchers, index){
+		watchers[index] = null;
+	}
+
     function atomWatch(watchers, watcher){
 		watchers.push(watcher);
+		return j.partial(unwatch, watchers, watchers.length - 1);
     }
 
     function atom(value){
@@ -47,7 +52,7 @@
             compareAndSet: j.partial(atomCompareAndSet, valueObj, watchers),
             deref: j.partial(atomDeref, valueObj),
             swap: j.partial(atomSwap, valueObj, watchers),
-			watch: j.partial(atomWatch, watchers) 
+			watch: j.partial(atomWatch, watchers)
         };
     }
 
@@ -65,7 +70,7 @@
     }
 
     function watch(atom, watcher){
-		atom.watch(watcher);
+		return atom.watch(watcher);
     }
 
     j.atom = atom;

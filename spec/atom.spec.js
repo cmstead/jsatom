@@ -70,17 +70,17 @@
 		describe('j.watch', function(){
 
 			var testAtom;
-		
+
 			beforeEach(function(){
 				testAtom = j.atom('testValue');
 			});
 
 			it('should set a watcher that executes when the atom is updated.', function(){
 				var spy = jasmine.createSpy('watcher');
-			
+
 				j.watch(testAtom, spy);
 				j.compareAndSet(testAtom, 'testValue', 'A new value');
-			
+
 				expect(spy).toHaveBeenCalledWith('A new value');
 			});
 
@@ -102,6 +102,21 @@
 
 				expect(test).not.toThrow();
 			});
+
+            it('should return a function', function(){
+                var returnValue = j.watch(testAtom, j.identity);
+                expect(typeof returnValue).toBe('function');
+            });
+
+            it('should return a function that removes a watcher', function(){
+                var spy = jasmine.createSpy('callback'),
+                    unwatch = j.watch(testAtom, spy);
+
+                unwatch();
+                j.compareAndSet(testAtom, 'testValue', 'A new value');
+
+                expect(spy).not.toHaveBeenCalled();
+            });
 
 		});
 
